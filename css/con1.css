@@ -229,7 +229,7 @@
 #content2 .intro .intro_l h3{
    width: 100%;
    height: 100%;
-   font-size: 14px;
+   font-size: 13px;
    color: #222;
    font-weight: 400;
    line-height: 20px;
@@ -279,6 +279,81 @@
     background-color: #ccc;
 }
 
+#content2 .frontend_box .skills_box{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+    /* background-color: darksalmon; */
+    border-radius: 10px;
+    padding: 10px;
+}
+#content2 .backend_box .skills_box{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+    /* background-color: darksalmon; */
+    border-radius: 10px;
+    padding: 10px;
+}
+#content2 .frontend_box .skills_box > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#content2 .frontend_box .skills_box > ul li{
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#content2 .frontend_box .skills_box > ul li span{
+    font-size: 11px;
+    color: #222;
+    position: absolute;
+    top: 60px;
+    font-weight: 600;
+}
+#content2 .frontend_box .skills_box > ul li:nth-child(1){
+    background: url(../images/html.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#content2 .frontend_box .skills_box > ul li:nth-child(2){
+    background: url(../images/css.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+#content2 .frontend_box .skills_box > ul li:nth-child(3){
+    background: url(../images/js.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+#content2 .frontend_box .skills_box > ul li:nth-child(4){
+    background: url(../images/typescript.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+#content2 .frontend_box .skills_box > ul li:nth-child(5){
+    background: url(../images/jquery.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+#content2 .frontend_box .skills_box > ul li:nth-child(6){
+    background: url(../images/react.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+
+
+
 #content2 .backend_box{
     width: 100%;
     height: 36%;
@@ -310,3 +385,209 @@
 }
 
 
+
+
+#content2 .backend_box .skills_box ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#content2 .backend_box .skills_box > ul li{
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#content2 .backend_box .skills_box > ul li span{
+    font-size: 11px;
+    color: #222;
+    position: absolute;
+    top: 60px;
+    font-weight: 600;
+}
+
+#content2 .backend_box .skills_box > ul li:nth-child(1){
+    background: url(../images/spring.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#content2 .backend_box .skills_box > ul li:nth-child(2){
+    background: url(../images/mariadb.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#content2 .backend_box .skills_box > ul li:nth-child(3){
+    background: url(../images/nodejs.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#content2 .backend_box .skills_box > ul li:nth-child(4){
+    background: url(../images/spring.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#content2 .backend_box .skills_box > ul li:nth-child(5){
+    background: url(../images/mariadb.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#content2 .backend_box .skills_box > ul li:nth-child(6){
+    background: url(../images/nodejs.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+
+/*con3 =================================================================*/
+
+#content3{
+    width: 100%;
+    height: 100vh;   
+    background-color: #ccc;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+}
+#content3 .project_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+}
+#content3 .left_box{
+    display: flex;
+    justify-content: center;
+    width: 49%;
+    height: 100%;
+    padding:100px 20px 30px 20px;
+    background-color: lightblue;
+    position: relative;
+}
+
+
+#content3 .left_box .project_box img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#project_box_ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#project_box_ul li{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+}
+.off{
+    display: none;
+}
+
+
+#project_box_ul li:nth-child(1){
+    z-index: 6;
+    transition:all 0.5s;
+    background: url(../images/workimg1.jpg) no-repeat;
+    background-size: cover;
+}
+#project_box_ul li:nth-child(2){
+    transform: rotatez(-5deg);
+    z-index: 7;
+    transition:all 0.5s;
+    background: url(../images/workim2.jpg) no-repeat;
+    background-size: cover;
+}
+#project_box_ul li:nth-child(3){
+    transform: rotatez(-10deg);
+    z-index: 8;
+    transition:all  0.5s;
+    background: url(../images/workimg3.jpg) no-repeat;
+    background-size: cover;
+}
+#project_box_ul li:nth-child(4){
+    transform: rotatez(-15deg);
+    z-index: 9;
+    transition:all  0.5s;
+    background: url(../images/workimg4.jpg) no-repeat;
+    background-size: cover;
+}
+#project_box_ul li:nth-child(5){  
+    transform: rotatez(-20deg);
+    z-index: 10;
+    transition:all  0.5s;
+    background: url(../images/workimg5.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+
+#content3 .text_box_wrap{
+    width: 90%;
+    height: 150px;
+    top: 600px;
+    position: relative;
+}
+
+#content3 .text_box_wrap .text_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+#content3 .text_box_wrap >div:nth-child(1){
+    background-color: blue;
+    opacity: 1;
+}
+#content3 .text_box_wrap >div:nth-child(2){
+    background-color: darkmagenta;
+    opacity: 0;
+}
+#content3 .text_box_wrap >div:nth-child(3){
+   background-color: cyan;
+   opacity: 0;
+}
+#content3 .text_box_wrap >div:nth-child(4){
+    background-color: lightgreen;
+    opacity: 0;
+}
+
+
+#content3 .text_box1 h3{
+    font-size: 25px;
+    color: #fff;
+}
+#content3 .text_box1 P{
+    font-size: 17px;
+    color: #fff;
+}
+
+#content3 .right_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+#content3 .project_page_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(166, 187, 166);
+    border-radius: 10px;
+    
+}
