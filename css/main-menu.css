@@ -1,0 +1,165 @@
+#wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#main-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    height: 100vh;
+    /* background-color: rgb(43, 46, 51); */
+    background-color: rgb(238, 163, 109);
+    position: fixed;
+    z-index: 9999;
+}
+
+#main-menu .main-menu-top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    padding-top: 20px;
+}
+#main-menu .main-menu-top span{
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+#main-menu .main-menu-top .footer{
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    
+}
+#main-menu .social {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+#main-menu .social  li{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#main-menu .social  li:nth-child(1){
+    background: url(../images/github.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#main-menu .social  li:nth-child(2){
+    background: url(../images/insta.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+#main-menu .social  li:nth-child(3){
+    background: url(../images/blog.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+#main-menu .main-menu-top .logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    background: url(../images/profil2.jpg) no-repeat 50% 100%;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+#main-menu .main-menu-top p{
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+#main-menu .main-menu-top span{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+#main-menu .main-menu-nav{
+    width: 100%;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+}
+#main-menu .main-menu-nav a{
+    display: block;
+    width: 100%;
+    height: 61px;
+    color: #222;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+}
+#main-menu .main-menu-nav a:last-child{
+    border: 0;
+}
+
+#main-menu .social{
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+}
+
+#main-menu .social a{
+    width: 30px;
+    height: 150px;
+}
+
+
+
+
+
+
+.content3{
+    width: 100%;
+    height: 100vh;   
+    background-color: chartreuse;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+.content4{
+    width: 100%;
+    height: 100vh;   
+    background-color: cornsilk;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+.content5{
+    width: 100%;
+    height: 100vh;  
+    background-color: cornflowerblue;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
