@@ -133,16 +133,7 @@
 
 
 
-.content3{
-    width: 100%;
-    height: 100vh;   
-    background-color: chartreuse;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s;
-}
+
 .content4{
     width: 100%;
     height: 100vh;   
